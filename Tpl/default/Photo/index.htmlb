@@ -1,0 +1,82 @@
+<include file="./Tpl/default/Public/topmenu.html" />
+ <body>
+<div id="topbar">
+	<div id="infobar">
+	<div style="padding-top:3px;float:left" id="logo"><a href="/">
+	<img width="130" border="0" src="/gramfeed_logo_31a.png"></a></div>
+	
+	<div style="padding-top:12px;float:right;"><a onclick="showSearchBox()" class="linkButton linkButtonS" id="link-search">浏览</a> | <a onclick="setupPopularMedia()" class="linkButton " id="link-pop">热图</a> | <a href="/about" class="linkButton">关于</a></div></div> 
+	<div class="topnav" id="share"><a class="signin link" onclick="logOauth(0)">登录</a></div>
+	
+</div>
+ 
+<div id="main">
+	
+	<div id="content" style="width: 980px;"><br>
+
+	<div style="padding-top: 30px; clear: both;"></div>
+	<div style="text-align:center;margin:auto;border:1px solid #777;background-color:#eee;-moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);" class="text2">
+	<div><input onkeypress="if ((event.which &amp;&amp; event.which == 13) || (event.keyCode &amp;&amp; event.keyCode == 13)) {searchTag();return false;} else return true;" size="type='text'" class="search" id="input">&nbsp;&nbsp;<span onclick="searchTag()" class="button">搜照片</span>&nbsp;&nbsp;<span onclick="findPeople()" class="button">搜帅哥</span>&nbsp;&nbsp;<span onclick="window.location=&quot;/instagram/map&quot;" class="button">搜地图</span><br><span style="color:#333; font-weight:normal;font-size:8pt;; padding-right:350px">比如: 地铁1号线, 徐家汇, 黄头发</span></div></div>
+	<div style="font-size: 14pt; padding-top: 50px;" class="text2">&nbsp;<a onclick="displayPopMedia()">
+		<img border="0" style="cursor: pointer;" title="Refresh" src="/Public/images/refresh.png"></a><div></div></div>
+
+	<div id="popular">
+	<div onmouseout="moreInfo(0,this)" onmouseover="moreInfo(1,this)" id="grid-cell"><a onclick="showPhoto(20)" style="cursor:pointer"><img width="200" height="200" border="0" src="http://distilleryimage5.instagram.com/2e000470690c11e18bb812313804a181_6.jpg" class="photo-grid"></a><div style="position:absolute;top:5px;left:5px;z-index:1;"><a target="_blank" href="/miyomm"><img width="40" height="40" border="0" title="miyomm" src="http://images.instagram.com/profiles/profile_3246947_75sq_1330089310.jpg" class="photo_user"></a></div><div style="top:15px" class="moreInfo"><a target="_blank" href="/instagram/142469276993745449_3246947" style="color:#000;text-decoration:none"><div style="float:right">2 hours ago </div></a></div><div style="bottom:15px;" class="moreInfo"><a target="_blank" href="/instagram/142469276993745449_3246947" style="color:#000;text-decoration:none"><div style="float:left">☰ 42</div></a><div onclick="if(logged)postLikeGrid(this,&quot;142469276993745449_3246947&quot;,961)" style="float:right">♡</div><div style="float:right"><a target="_blank" href="/instagram/142469276993745449_3246947" style="color:#000;text-decoration:none">961</a>&nbsp;</div><div style="clear:both"></div></div></div>
+	
+<div onmouseout="moreInfo(0,this)" onmouseover="moreInfo(1,this)" id="grid-cell"><a onclick="showPhoto(28)" style="cursor:pointer"><img width="200" height="200" border="0" src="http://distilleryimage0.instagram.com/badd9af0691711e180d51231380fcd7e_6.jpg" class="photo-grid"></a><div style="position:absolute;top:5px;left:5px;z-index:1;"><a target="_blank" href="/igurban"><img width="40" height="40" border="0" title="igurban" src="http://images.instagram.com/profiles/profile_10695476_75sq_1330429929.jpg" class="photo_user"></a></div><div style="top:15px" class="moreInfo"><a target="_blank" href="/instagram/142510891232359524_10695476" style="color:#000;text-decoration:none"><div style="float:right">16 min ago </div></a></div><div style="bottom:15px;" class="moreInfo"><a target="_blank" href="/instagram/142510891232359524_10695476" style="color:#000;text-decoration:none"><div style="float:left">☰ 22</div></a><div onclick="if(logged)postLikeGrid(this,&quot;142510891232359524_10695476&quot;,81)" style="float:right">♡</div><div style="float:right"><a target="_blank" href="/instagram/142510891232359524_10695476" style="color:#000;text-decoration:none">81</a>&nbsp;</div><div style="clear:both"></div></div></div>
+
+<div onmouseout="moreInfo(0,this)" onmouseover="moreInfo(1,this)" id="grid-cell"><a onclick="showPhoto(29)" style="cursor:pointer"><img width="200" height="200" border="0" src="http://distilleryimage5.instagram.com/4276f3f2690f11e1abb01231381b65e3_6.jpg" class="photo-grid"></a><div style="position:absolute;top:5px;left:5px;z-index:1;"><a target="_blank" href="/chungshersher"><img width="40" height="40" border="0" title="chungshersher" src="http://images.instagram.com/profiles/profile_5757955_75sq_1330197522.jpg" class="photo_user"></a></div><div style="top:15px" class="moreInfo"><a target="_blank" href="/instagram/142480373646766301_5757955" style="color:#000;text-decoration:none"><div style="float:right">1 hour ago </div></a></div><div style="bottom:15px;" class="moreInfo"><a target="_blank" href="/instagram/142480373646766301_5757955" style="color:#000;text-decoration:none"><div style="float:left">☰ 9</div></a><div onclick="if(logged)postLikeGrid(this,&quot;142480373646766301_5757955&quot;,380)" style="float:right">♡</div><div style="float:right"><a target="_blank" href="/instagram/142480373646766301_5757955" style="color:#000;text-decoration:none">380</a>&nbsp;</div><div style="clear:both"></div></div></div>
+
+<div onmouseout="moreInfo(0,this)" onmouseover="moreInfo(1,this)" id="grid-cell"><a onclick="showPhoto(30)" style="cursor:pointer"><img width="200" height="200" border="0" src="http://distilleryimage0.instagram.com/09c508e2691811e1b9f1123138140926_6.jpg" class="photo-grid"></a><div style="position:absolute;top:5px;left:5px;z-index:1;"><a target="_blank" href="/alexandrasah"><img width="40" height="40" border="0" title="alexandrasah" src="http://images.instagram.com/profiles/profile_4247588_75sq_1328631429.jpg" class="photo_user"></a></div><div style="top:15px" class="moreInfo"><a target="_blank" href="/instagram/142512001659729576_4247588" style="color:#000;text-decoration:none"><div style="float:right">14 min ago </div></a></div><div style="bottom:15px;" class="moreInfo"><a target="_blank" href="/instagram/142512001659729576_4247588" style="color:#000;text-decoration:none"><div style="float:left">☰ 1</div></a><div onclick="if(logged)postLikeGrid(this,&quot;142512001659729576_4247588&quot;,56)" style="float:right">♡</div><div style="float:right"><a target="_blank" href="/instagram/142512001659729576_4247588" style="color:#000;text-decoration:none">56</a>&nbsp;</div><div style="clear:both"></div></div></div>
+
+
+
+
+	
+	</div>
+	</div>
+	
+	<div id="loading"><img src="/Public/images/20_loading_icon.gif"></div>
+	<div style='clear:both'></div><br/>
+	
+	<div id="more" onclick='getMediaNextPage()'>更多</div>
+</div>
+<div id='helpbox'>J = Next Photo<br/>K = Previous Photo</div>
+
+
+<!--sign in menu-->
+	<fieldset id="signin_menu">
+      <form method="post" id="signin" action="">
+<div class="popreg"><div class="popoutlogin social clr"><a href="/connect/sina/" class="sina">用新浪微博登录</a><a href="/connect/qweibo/" class="qweibo">用腾讯微博登录</a><a href="/connect/renren/" class="renren">用豆瓣登录</a><a href="/connect/qq/" class="oicq">用QQ帐号登录</a></div></div>
+      </form>
+    </fieldset>
+<!--end of sign in-->
+
+
+<script type="text/javascript">
+	function moreInfo(a,b){a?$(b).children('.moreInfo').show():$(b).children('.moreInfo').hide()};
+	function showPhoto(a){if(!plb){plb=1;clearInterval(scroller);var b=$(window).scrollTop();scrolltop=b;$("#lightbox").show();$("#main").hide();var c=($(window).width()-920)/2;$("#lb-content").show();$(window).scrollTop(0);loadPhoto(a);if($("#lightbox").height()<$(window).height()){$("#lightbox").height($(window).height())}}};
+		function closeLB(){if(plb){$("#lightbox").hide();$("#lb-content").hide();$("#lb-popup").hide();$("#main").css("position","static");$("#main").show();$(window).scrollTop(scrolltop);if(next&&all)scroller=setInterval(function(){scroll()},500);plb=0}};
+			function scrollToTop(){$('html,body').animate({scrollTop:0},'slow')};
+function showPopup(a){if(a){plb=1;if(scroller)clearInterval(scroller);var b=$(window).scrollTop();scrolltop=b;$("#main").css("position","fixed");$("#main").css("top",(0-b)+"px");$("#lightbox").show();$("#lightbox").height($(window).height());var c=($(window).width()-500)/2;$("#lb-popup").css("left",c+"px");$("#lb-popup").width(500);$("#lb-popup").show();$(window).scrollTop(0);$("#lb-popup").html(a)}};
+        $(document).ready(function() {
+            $(".signin").mouseover(function() {
+                $("fieldset#signin_menu").toggle();
+				$(".signin").toggleClass("menu-open");
+            });
+			
+			$("fieldset#signin_menu").mouseup(function() {
+				return false;
+			});
+			$(document).mounseout(function(e) {
+				if($(e.target).parent("a.signin").length==0) {
+					$(".signin").removeClass("menu-open");
+					$("fieldset#signin_menu").hide();
+				}
+			});			
+			
+        });
+  </script>
+  <include file="./Tpl/default/Public/foot.html" />
+ </body>
+</html>

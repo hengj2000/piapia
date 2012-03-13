@@ -1,0 +1,338 @@
+[ 2012-03-11T17:19:40+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2012-03-11T17:19:40+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001410s ]
+[ 2012-03-11T17:19:40+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001516s ]
+[ 2012-03-11T17:19:40+08:00 ] / | INFO: Tag[ view_template ] --START--
+[ 2012-03-11T17:19:40+08:00 ] / | INFO: Run LocationTemplate Behavior [ RunTime:0.001906s ]
+[ 2012-03-11T17:19:40+08:00 ] / | INFO: Tag[ view_template ] --END-- [ RunTime:0.001993s ]
+[ 2012-03-11T17:19:40+08:00 ] / | INFO: Tag[ view_parse ] --START--
+[ 2012-03-11T17:19:40+08:00 ] / | INFO: Run ParseTemplate Behavior [ RunTime:0.010356s ]
+[ 2012-03-11T17:19:40+08:00 ] / | INFO: Tag[ view_parse ] --END-- [ RunTime:0.010461s ]
+[ 2012-03-11T17:19:40+08:00 ] / | INFO: Tag[ view_filter ] --START--
+[ 2012-03-11T17:19:40+08:00 ] / | INFO: Run ContentReplace Behavior [ RunTime:0.000590s ]
+[ 2012-03-11T17:19:40+08:00 ] / | INFO: Run TokenBuild Behavior [ RunTime:0.001146s ]
+[ 2012-03-11T17:19:40+08:00 ] / | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000450s ]
+[ 2012-03-11T17:19:40+08:00 ] / | INFO: Run ShowRuntime Behavior [ RunTime:0.000573s ]
+[ 2012-03-11T17:19:40+08:00 ] / | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002908s ]
+[ 2012-03-11T17:19:40+08:00 ] / | INFO: Tag[ view_end ] --START--
+[ 2012-03-11T17:19:40+08:00 ] / | INFO: Run ShowPageTrace Behavior [ RunTime:0.003129s ]
+[ 2012-03-11T17:19:40+08:00 ] / | INFO: Tag[ view_end ] --END-- [ RunTime:0.003212s ]
+[ 2012-03-11T17:36:19+08:00 ] /index.php | INFO: Tag[ app_begin ] --START--
+[ 2012-03-11T17:36:19+08:00 ] /index.php | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000441s ]
+[ 2012-03-11T17:36:19+08:00 ] /index.php | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000523s ]
+[ 2012-03-11T17:36:19+08:00 ] /index.php | INFO: Tag[ view_template ] --START--
+[ 2012-03-11T17:36:19+08:00 ] /index.php | INFO: Run LocationTemplate Behavior [ RunTime:0.023088s ]
+[ 2012-03-11T17:36:19+08:00 ] /index.php | INFO: Tag[ view_template ] --END-- [ RunTime:0.023166s ]
+[ 2012-03-11T17:36:19+08:00 ] /index.php | INFO: Tag[ view_parse ] --START--
+[ 2012-03-11T17:36:20+08:00 ] /index.php | INFO: Run ParseTemplate Behavior [ RunTime:0.128403s ]
+[ 2012-03-11T17:36:20+08:00 ] /index.php | INFO: Tag[ view_parse ] --END-- [ RunTime:0.128480s ]
+[ 2012-03-11T17:36:20+08:00 ] /index.php | INFO: Tag[ view_filter ] --START--
+[ 2012-03-11T17:36:20+08:00 ] /index.php | INFO: Run ContentReplace Behavior [ RunTime:0.022525s ]
+[ 2012-03-11T17:36:20+08:00 ] /index.php | INFO: Run TokenBuild Behavior [ RunTime:0.006788s ]
+[ 2012-03-11T17:36:20+08:00 ] /index.php | INFO: Run WriteHtmlCache Behavior [ RunTime:0.004811s ]
+[ 2012-03-11T17:36:20+08:00 ] /index.php | INFO: Run ShowRuntime Behavior [ RunTime:0.009779s ]
+[ 2012-03-11T17:36:20+08:00 ] /index.php | INFO: Tag[ view_filter ] --END-- [ RunTime:0.044095s ]
+[ 2012-03-11T17:36:20+08:00 ] /index.php | INFO: Tag[ view_end ] --START--
+[ 2012-03-11T17:36:20+08:00 ] /index.php | INFO: Run ShowPageTrace Behavior [ RunTime:0.060924s ]
+[ 2012-03-11T17:36:20+08:00 ] /index.php | INFO: Tag[ view_end ] --END-- [ RunTime:0.061026s ]
+[ 2012-03-11T17:37:17+08:00 ] /index.php/Photo/add | ERR: (ThinkException) 无法加载模块Photo
+[ 2012-03-11T17:38:03+08:00 ] /index.php/Photo/add | ERR: (ThinkException) 无法加载模块Photo
+[ 2012-03-11T17:39:10+08:00 ] /index.php/Photo/add | ERR: (ThinkException) 无法加载模块Photo
+[ 2012-03-11T17:39:14+08:00 ] /index.php/Photo/add | ERR: (ThinkException) 无法加载模块Photo
+[ 2012-03-11T17:39:15+08:00 ] /index.php/Photo/add | ERR: (ThinkException) 无法加载模块Photo
+[ 2012-03-11T17:40:29+08:00 ] /index.php/Photo/add | ERR: (ThinkException) 无法加载模块Photo
+[ 2012-03-11T17:40:31+08:00 ] /index.php/Photo/add | ERR: (ThinkException) 无法加载模块Photo
+[ 2012-03-11T17:40:38+08:00 ] /index.php/Photo | ERR: (ThinkException) 无法加载模块Photo
+[ 2012-03-11T17:40:53+08:00 ] /index.php/Photo | ERR: (ThinkException) 无法加载模块Photo
+[ 2012-03-11T17:42:41+08:00 ] /index.php/Photo | ERR: (ThinkException) 无法加载模块Photo
+[ 2012-03-11T17:42:59+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2012-03-11T17:42:59+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000461s ]
+[ 2012-03-11T17:42:59+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000534s ]
+[ 2012-03-11T17:42:59+08:00 ] / | NOTIC: [4096] Object of class HomeAction could not be converted to string App.class.php 第 99 行.
+[ 2012-03-11T17:42:59+08:00 ] / | NOTIC: [8] Undefined variable: action App.class.php 第 125 行.
+[ 2012-03-11T17:42:59+08:00 ] / | INFO: Tag[ view_template ] --START--
+[ 2012-03-11T17:42:59+08:00 ] / | INFO: Run LocationTemplate Behavior [ RunTime:0.000842s ]
+[ 2012-03-11T17:42:59+08:00 ] / | INFO: Tag[ view_template ] --END-- [ RunTime:0.000904s ]
+[ 2012-03-11T17:42:59+08:00 ] / | INFO: Tag[ view_parse ] --START--
+[ 2012-03-11T17:42:59+08:00 ] / | INFO: Run ParseTemplate Behavior [ RunTime:0.013220s ]
+[ 2012-03-11T17:42:59+08:00 ] / | INFO: Tag[ view_parse ] --END-- [ RunTime:0.013301s ]
+[ 2012-03-11T17:42:59+08:00 ] / | INFO: Tag[ view_filter ] --START--
+[ 2012-03-11T17:42:59+08:00 ] / | INFO: Run ContentReplace Behavior [ RunTime:0.000457s ]
+[ 2012-03-11T17:42:59+08:00 ] / | INFO: Run TokenBuild Behavior [ RunTime:0.000405s ]
+[ 2012-03-11T17:42:59+08:00 ] / | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000290s ]
+[ 2012-03-11T17:42:59+08:00 ] / | INFO: Run ShowRuntime Behavior [ RunTime:0.000554s ]
+[ 2012-03-11T17:42:59+08:00 ] / | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001856s ]
+[ 2012-03-11T17:42:59+08:00 ] / | INFO: Tag[ view_end ] --START--
+[ 2012-03-11T17:42:59+08:00 ] / | INFO: Run ShowPageTrace Behavior [ RunTime:0.002362s ]
+[ 2012-03-11T17:42:59+08:00 ] / | INFO: Tag[ view_end ] --END-- [ RunTime:0.002448s ]
+[ 2012-03-11T17:43:28+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2012-03-11T17:43:28+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000495s ]
+[ 2012-03-11T17:43:28+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000578s ]
+[ 2012-03-11T17:43:28+08:00 ] / | NOTIC: [4096] Object of class IndexAction could not be converted to string App.class.php 第 99 行.
+[ 2012-03-11T17:43:28+08:00 ] / | NOTIC: [8] Undefined variable: action App.class.php 第 125 行.
+[ 2012-03-11T17:43:29+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2012-03-11T17:43:29+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000534s ]
+[ 2012-03-11T17:43:29+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000621s ]
+[ 2012-03-11T17:43:29+08:00 ] / | NOTIC: [4096] Object of class IndexAction could not be converted to string App.class.php 第 99 行.
+[ 2012-03-11T17:43:29+08:00 ] / | NOTIC: [8] Undefined variable: action App.class.php 第 125 行.
+[ 2012-03-11T17:43:29+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2012-03-11T17:43:29+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000498s ]
+[ 2012-03-11T17:43:29+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000581s ]
+[ 2012-03-11T17:43:29+08:00 ] / | NOTIC: [4096] Object of class IndexAction could not be converted to string App.class.php 第 99 行.
+[ 2012-03-11T17:43:29+08:00 ] / | NOTIC: [8] Undefined variable: action App.class.php 第 125 行.
+[ 2012-03-11T17:43:45+08:00 ] /index.php/Home | INFO: Tag[ route_check ] --START--
+[ 2012-03-11T17:43:45+08:00 ] /index.php/Home | INFO: Run CheckRoute Behavior [ RunTime:0.000721s ]
+[ 2012-03-11T17:43:45+08:00 ] /index.php/Home | INFO: Tag[ route_check ] --END-- [ RunTime:0.000811s ]
+[ 2012-03-11T17:43:45+08:00 ] /index.php/Home | INFO: Tag[ app_begin ] --START--
+[ 2012-03-11T17:43:45+08:00 ] /index.php/Home | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000526s ]
+[ 2012-03-11T17:43:45+08:00 ] /index.php/Home | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000588s ]
+[ 2012-03-11T17:43:45+08:00 ] /index.php/Home | NOTIC: [4096] Object of class HomeAction could not be converted to string App.class.php 第 99 行.
+[ 2012-03-11T17:43:45+08:00 ] /index.php/Home | NOTIC: [8] Undefined variable: action App.class.php 第 125 行.
+[ 2012-03-11T17:43:45+08:00 ] /index.php/Home | INFO: Tag[ view_template ] --START--
+[ 2012-03-11T17:43:45+08:00 ] /index.php/Home | INFO: Run LocationTemplate Behavior [ RunTime:0.000321s ]
+[ 2012-03-11T17:43:45+08:00 ] /index.php/Home | INFO: Tag[ view_template ] --END-- [ RunTime:0.000377s ]
+[ 2012-03-11T17:43:45+08:00 ] /index.php/Home | INFO: Tag[ view_parse ] --START--
+[ 2012-03-11T17:43:45+08:00 ] /index.php/Home | INFO: Run ParseTemplate Behavior [ RunTime:0.009656s ]
+[ 2012-03-11T17:43:45+08:00 ] /index.php/Home | INFO: Tag[ view_parse ] --END-- [ RunTime:0.009737s ]
+[ 2012-03-11T17:43:45+08:00 ] /index.php/Home | INFO: Tag[ view_filter ] --START--
+[ 2012-03-11T17:43:45+08:00 ] /index.php/Home | INFO: Run ContentReplace Behavior [ RunTime:0.000386s ]
+[ 2012-03-11T17:43:45+08:00 ] /index.php/Home | INFO: Run TokenBuild Behavior [ RunTime:0.000293s ]
+[ 2012-03-11T17:43:45+08:00 ] /index.php/Home | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000222s ]
+[ 2012-03-11T17:43:45+08:00 ] /index.php/Home | INFO: Run ShowRuntime Behavior [ RunTime:0.000390s ]
+[ 2012-03-11T17:43:45+08:00 ] /index.php/Home | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001444s ]
+[ 2012-03-11T17:43:45+08:00 ] /index.php/Home | INFO: Tag[ view_end ] --START--
+[ 2012-03-11T17:43:45+08:00 ] /index.php/Home | INFO: Run ShowPageTrace Behavior [ RunTime:0.002214s ]
+[ 2012-03-11T17:43:45+08:00 ] /index.php/Home | INFO: Tag[ view_end ] --END-- [ RunTime:0.002284s ]
+[ 2012-03-11T17:43:59+08:00 ] /index.php/Photo/add | ERR: (ThinkException) 无法加载模块Photo
+[ 2012-03-11T17:44:10+08:00 ] /index.php/Home | INFO: Tag[ route_check ] --START--
+[ 2012-03-11T17:44:10+08:00 ] /index.php/Home | INFO: Run CheckRoute Behavior [ RunTime:0.000659s ]
+[ 2012-03-11T17:44:10+08:00 ] /index.php/Home | INFO: Tag[ route_check ] --END-- [ RunTime:0.000736s ]
+[ 2012-03-11T17:44:10+08:00 ] /index.php/Home | INFO: Tag[ app_begin ] --START--
+[ 2012-03-11T17:44:10+08:00 ] /index.php/Home | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000421s ]
+[ 2012-03-11T17:44:10+08:00 ] /index.php/Home | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000484s ]
+[ 2012-03-11T17:44:10+08:00 ] /index.php/Home | NOTIC: [4096] Object of class HomeAction could not be converted to string App.class.php 第 99 行.
+[ 2012-03-11T17:44:10+08:00 ] /index.php/Home | NOTIC: [8] Undefined variable: action App.class.php 第 125 行.
+[ 2012-03-11T17:44:10+08:00 ] /index.php/Home | INFO: Tag[ view_template ] --START--
+[ 2012-03-11T17:44:10+08:00 ] /index.php/Home | INFO: Run LocationTemplate Behavior [ RunTime:0.000314s ]
+[ 2012-03-11T17:44:10+08:00 ] /index.php/Home | INFO: Tag[ view_template ] --END-- [ RunTime:0.000368s ]
+[ 2012-03-11T17:44:10+08:00 ] /index.php/Home | INFO: Tag[ view_parse ] --START--
+[ 2012-03-11T17:44:10+08:00 ] /index.php/Home | INFO: Run ParseTemplate Behavior [ RunTime:0.011519s ]
+[ 2012-03-11T17:44:10+08:00 ] /index.php/Home | INFO: Tag[ view_parse ] --END-- [ RunTime:0.011610s ]
+[ 2012-03-11T17:44:10+08:00 ] /index.php/Home | INFO: Tag[ view_filter ] --START--
+[ 2012-03-11T17:44:10+08:00 ] /index.php/Home | INFO: Run ContentReplace Behavior [ RunTime:0.000401s ]
+[ 2012-03-11T17:44:10+08:00 ] /index.php/Home | INFO: Run TokenBuild Behavior [ RunTime:0.000293s ]
+[ 2012-03-11T17:44:10+08:00 ] /index.php/Home | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000209s ]
+[ 2012-03-11T17:44:10+08:00 ] /index.php/Home | INFO: Run ShowRuntime Behavior [ RunTime:0.000393s ]
+[ 2012-03-11T17:44:10+08:00 ] /index.php/Home | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001438s ]
+[ 2012-03-11T17:44:10+08:00 ] /index.php/Home | INFO: Tag[ view_end ] --START--
+[ 2012-03-11T17:44:10+08:00 ] /index.php/Home | INFO: Run ShowPageTrace Behavior [ RunTime:0.001489s ]
+[ 2012-03-11T17:44:10+08:00 ] /index.php/Home | INFO: Tag[ view_end ] --END-- [ RunTime:0.001558s ]
+[ 2012-03-11T17:45:37+08:00 ] /index.php/Home | INFO: Tag[ route_check ] --START--
+[ 2012-03-11T17:45:37+08:00 ] /index.php/Home | INFO: Run CheckRoute Behavior [ RunTime:0.000797s ]
+[ 2012-03-11T17:45:37+08:00 ] /index.php/Home | INFO: Tag[ route_check ] --END-- [ RunTime:0.000877s ]
+[ 2012-03-11T17:45:37+08:00 ] /index.php/Home | INFO: Tag[ app_begin ] --START--
+[ 2012-03-11T17:45:37+08:00 ] /index.php/Home | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000524s ]
+[ 2012-03-11T17:45:37+08:00 ] /index.php/Home | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000581s ]
+[ 2012-03-11T17:45:37+08:00 ] /index.php/Home | INFO: Tag[ view_template ] --START--
+[ 2012-03-11T17:45:37+08:00 ] /index.php/Home | INFO: Run LocationTemplate Behavior [ RunTime:0.001630s ]
+[ 2012-03-11T17:45:37+08:00 ] /index.php/Home | INFO: Tag[ view_template ] --END-- [ RunTime:0.001723s ]
+[ 2012-03-11T17:45:37+08:00 ] /index.php/Home | INFO: Tag[ view_parse ] --START--
+[ 2012-03-11T17:45:37+08:00 ] /index.php/Home | INFO: Run ParseTemplate Behavior [ RunTime:0.012997s ]
+[ 2012-03-11T17:45:37+08:00 ] /index.php/Home | INFO: Tag[ view_parse ] --END-- [ RunTime:0.013092s ]
+[ 2012-03-11T17:45:37+08:00 ] /index.php/Home | INFO: Tag[ view_filter ] --START--
+[ 2012-03-11T17:45:37+08:00 ] /index.php/Home | INFO: Run ContentReplace Behavior [ RunTime:0.000565s ]
+[ 2012-03-11T17:45:37+08:00 ] /index.php/Home | INFO: Run TokenBuild Behavior [ RunTime:0.000601s ]
+[ 2012-03-11T17:45:37+08:00 ] /index.php/Home | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000367s ]
+[ 2012-03-11T17:45:37+08:00 ] /index.php/Home | INFO: Run ShowRuntime Behavior [ RunTime:0.000535s ]
+[ 2012-03-11T17:45:37+08:00 ] /index.php/Home | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002293s ]
+[ 2012-03-11T17:45:37+08:00 ] /index.php/Home | INFO: Tag[ view_end ] --START--
+[ 2012-03-11T17:45:37+08:00 ] /index.php/Home | INFO: Run ShowPageTrace Behavior [ RunTime:0.001715s ]
+[ 2012-03-11T17:45:37+08:00 ] /index.php/Home | INFO: Tag[ view_end ] --END-- [ RunTime:0.001800s ]
+[ 2012-03-11T17:45:48+08:00 ] /index.php/Home | INFO: Tag[ route_check ] --START--
+[ 2012-03-11T17:45:48+08:00 ] /index.php/Home | INFO: Run CheckRoute Behavior [ RunTime:0.000638s ]
+[ 2012-03-11T17:45:48+08:00 ] /index.php/Home | INFO: Tag[ route_check ] --END-- [ RunTime:0.000712s ]
+[ 2012-03-11T17:45:48+08:00 ] /index.php/Home | INFO: Tag[ app_begin ] --START--
+[ 2012-03-11T17:45:48+08:00 ] /index.php/Home | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000415s ]
+[ 2012-03-11T17:45:48+08:00 ] /index.php/Home | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000467s ]
+[ 2012-03-11T17:45:48+08:00 ] /index.php/Home | INFO: Tag[ view_template ] --START--
+[ 2012-03-11T17:45:48+08:00 ] /index.php/Home | INFO: Run LocationTemplate Behavior [ RunTime:0.000377s ]
+[ 2012-03-11T17:45:48+08:00 ] /index.php/Home | INFO: Tag[ view_template ] --END-- [ RunTime:0.000449s ]
+[ 2012-03-11T17:45:48+08:00 ] /index.php/Home | INFO: Tag[ view_parse ] --START--
+[ 2012-03-11T17:45:48+08:00 ] /index.php/Home | INFO: Run ParseTemplate Behavior [ RunTime:0.008632s ]
+[ 2012-03-11T17:45:48+08:00 ] /index.php/Home | INFO: Tag[ view_parse ] --END-- [ RunTime:0.008706s ]
+[ 2012-03-11T17:45:48+08:00 ] /index.php/Home | INFO: Tag[ view_filter ] --START--
+[ 2012-03-11T17:45:48+08:00 ] /index.php/Home | INFO: Run ContentReplace Behavior [ RunTime:0.000454s ]
+[ 2012-03-11T17:45:48+08:00 ] /index.php/Home | INFO: Run TokenBuild Behavior [ RunTime:0.000343s ]
+[ 2012-03-11T17:45:48+08:00 ] /index.php/Home | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000295s ]
+[ 2012-03-11T17:45:48+08:00 ] /index.php/Home | INFO: Run ShowRuntime Behavior [ RunTime:0.000398s ]
+[ 2012-03-11T17:45:48+08:00 ] /index.php/Home | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001651s ]
+[ 2012-03-11T17:45:48+08:00 ] /index.php/Home | INFO: Tag[ view_end ] --START--
+[ 2012-03-11T17:45:48+08:00 ] /index.php/Home | INFO: Run ShowPageTrace Behavior [ RunTime:0.004787s ]
+[ 2012-03-11T17:45:48+08:00 ] /index.php/Home | INFO: Tag[ view_end ] --END-- [ RunTime:0.004871s ]
+[ 2012-03-11T17:45:56+08:00 ] /index.php/Photo | ERR: (ThinkException) 无法加载模块Photo
+[ 2012-03-11T17:47:02+08:00 ] /index.php/Photo | ERR: (ThinkException) 无法加载模块Photo
+[ 2012-03-11T17:47:03+08:00 ] /index.php/Photo | ERR: (ThinkException) 无法加载模块Photo
+[ 2012-03-11T17:47:54+08:00 ] /index.php/Photo | ERR: (ThinkException) 无法加载模块Photo
+[ 2012-03-11T17:48:09+08:00 ] /index.php/add | ERR: (ThinkException) 无法加载模块Add
+[ 2012-03-11T17:48:18+08:00 ] /index.php/Photo/add | ERR: (ThinkException) 无法加载模块Photo
+[ 2012-03-11T17:49:51+08:00 ] /index.php/Blog/add | INFO: Tag[ route_check ] --START--
+[ 2012-03-11T17:49:51+08:00 ] /index.php/Blog/add | INFO: Run CheckRoute Behavior [ RunTime:0.000636s ]
+[ 2012-03-11T17:49:51+08:00 ] /index.php/Blog/add | INFO: Tag[ route_check ] --END-- [ RunTime:0.000709s ]
+[ 2012-03-11T17:49:51+08:00 ] /index.php/Blog/add | INFO: Tag[ app_begin ] --START--
+[ 2012-03-11T17:49:51+08:00 ] /index.php/Blog/add | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000418s ]
+[ 2012-03-11T17:49:51+08:00 ] /index.php/Blog/add | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000470s ]
+[ 2012-03-11T17:49:52+08:00 ] /index.php/Blog/add | SQL: SHOW COLUMNS FROM `p_category` [ RunTime:0.416681s ]
+[ 2012-03-11T17:49:52+08:00 ] /index.php/Blog/add | SQL: SELECT * FROM `p_category`  [ RunTime:0.000382s ]
+[ 2012-03-11T17:49:52+08:00 ] /index.php/Blog/add | INFO: Tag[ view_template ] --START--
+[ 2012-03-11T17:49:52+08:00 ] /index.php/Blog/add | INFO: Run LocationTemplate Behavior [ RunTime:0.032734s ]
+[ 2012-03-11T17:49:52+08:00 ] /index.php/Blog/add | INFO: Tag[ view_template ] --END-- [ RunTime:0.032821s ]
+[ 2012-03-11T17:49:52+08:00 ] /index.php/Blog/add | INFO: Tag[ view_parse ] --START--
+[ 2012-03-11T17:49:52+08:00 ] /index.php/Blog/add | NOTIC: [2] file_get_contents(./Tpl/default/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory ThinkTemplate.class.php 第 702 行.
+[ 2012-03-11T17:49:52+08:00 ] /index.php/Blog/add | INFO: Run ParseTemplate Behavior [ RunTime:0.077632s ]
+[ 2012-03-11T17:49:52+08:00 ] /index.php/Blog/add | INFO: Tag[ view_parse ] --END-- [ RunTime:0.077712s ]
+[ 2012-03-11T17:49:52+08:00 ] /index.php/Blog/add | INFO: Tag[ view_filter ] --START--
+[ 2012-03-11T17:49:52+08:00 ] /index.php/Blog/add | INFO: Run ContentReplace Behavior [ RunTime:0.000485s ]
+[ 2012-03-11T17:49:52+08:00 ] /index.php/Blog/add | INFO: Run TokenBuild Behavior [ RunTime:0.000404s ]
+[ 2012-03-11T17:49:52+08:00 ] /index.php/Blog/add | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000327s ]
+[ 2012-03-11T17:49:52+08:00 ] /index.php/Blog/add | INFO: Run ShowRuntime Behavior [ RunTime:0.000455s ]
+[ 2012-03-11T17:49:52+08:00 ] /index.php/Blog/add | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001831s ]
+[ 2012-03-11T17:49:52+08:00 ] /index.php/Blog/add | INFO: Tag[ view_end ] --START--
+[ 2012-03-11T17:49:52+08:00 ] /index.php/Blog/add | INFO: Run ShowPageTrace Behavior [ RunTime:0.001728s ]
+[ 2012-03-11T17:49:52+08:00 ] /index.php/Blog/add | INFO: Tag[ view_end ] --END-- [ RunTime:0.001847s ]
+[ 2012-03-11T17:49:52+08:00 ] /index.php/blog/verify | INFO: Tag[ route_check ] --START--
+[ 2012-03-11T17:49:53+08:00 ] /index.php/blog/verify | INFO: Run CheckRoute Behavior [ RunTime:0.000899s ]
+[ 2012-03-11T17:49:53+08:00 ] /index.php/blog/verify | INFO: Tag[ route_check ] --END-- [ RunTime:0.000972s ]
+[ 2012-03-11T17:49:53+08:00 ] /index.php/blog/verify | INFO: Tag[ app_begin ] --START--
+[ 2012-03-11T17:49:53+08:00 ] /index.php/blog/verify | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000659s ]
+[ 2012-03-11T17:49:53+08:00 ] /index.php/blog/verify | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000712s ]
+[ 2012-03-11T17:49:53+08:00 ] /index.php/blog/verify | SQL: SHOW COLUMNS FROM `p_category` [ RunTime:0.017877s ]
+[ 2012-03-11T17:49:53+08:00 ] /index.php/blog/verify | SQL: SELECT * FROM `p_category`  [ RunTime:0.000373s ]
+[ 2012-03-11T17:49:53+08:00 ] /index.php/blog/verify | SQL: SHOW COLUMNS FROM `p_blog` [ RunTime:0.076075s ]
+[ 2012-03-11T17:49:53+08:00 ] /index.php/blog/verify | SQL: SHOW COLUMNS FROM `p_comment` [ RunTime:0.062640s ]
+[ 2012-03-11T17:49:53+08:00 ] /index.php/blog/verify | SQL: SHOW COLUMNS FROM `p_comment` [ RunTime:0.003759s ]
+[ 2012-03-11T17:49:53+08:00 ] /index.php/blog/verify | SQL: SELECT * FROM `p_blog` WHERE status=1 ORDER BY cTime desc LIMIT 10   [ RunTime:0.001022s ]
+[ 2012-03-11T17:49:53+08:00 ] /index.php/blog/verify | SQL: SELECT * FROM `p_comment` WHERE status=1 ORDER BY id desc LIMIT 8   [ RunTime:0.000426s ]
+[ 2012-03-11T17:49:53+08:00 ] /index.php/blog/verify | SQL: SHOW COLUMNS FROM `p_tag` [ RunTime:0.002082s ]
+[ 2012-03-11T17:49:53+08:00 ] /index.php/blog/verify | SQL: SELECT `id`,`name`,`count` FROM `p_tag` WHERE module='Blog' ORDER BY count desc LIMIT 0,25   [ RunTime:0.000647s ]
+[ 2012-03-11T17:50:42+08:00 ] /index.php/Photo/add | ERR: (ThinkException) 无法加载模块Photo
+[ 2012-03-11T17:51:41+08:00 ] /index.php/Photo/add | ERR: (ThinkException) 模板不存在[./Tpl/default/Photo/add.html]
+[ 2012-03-11T17:52:39+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2012-03-11T17:52:39+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000438s ]
+[ 2012-03-11T17:52:39+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000513s ]
+[ 2012-03-11T17:52:39+08:00 ] / | INFO: Tag[ view_template ] --START--
+[ 2012-03-11T17:52:39+08:00 ] / | INFO: Run LocationTemplate Behavior [ RunTime:0.000973s ]
+[ 2012-03-11T17:52:39+08:00 ] / | INFO: Tag[ view_template ] --END-- [ RunTime:0.001061s ]
+[ 2012-03-11T17:52:39+08:00 ] / | INFO: Tag[ view_parse ] --START--
+[ 2012-03-11T17:52:39+08:00 ] / | INFO: Run ParseTemplate Behavior [ RunTime:0.110351s ]
+[ 2012-03-11T17:52:39+08:00 ] / | INFO: Tag[ view_parse ] --END-- [ RunTime:0.110431s ]
+[ 2012-03-11T17:52:39+08:00 ] / | INFO: Tag[ view_filter ] --START--
+[ 2012-03-11T17:52:39+08:00 ] / | INFO: Run ContentReplace Behavior [ RunTime:0.014588s ]
+[ 2012-03-11T17:52:39+08:00 ] / | INFO: Run TokenBuild Behavior [ RunTime:0.006841s ]
+[ 2012-03-11T17:52:39+08:00 ] / | INFO: Run WriteHtmlCache Behavior [ RunTime:0.004725s ]
+[ 2012-03-11T17:52:39+08:00 ] / | INFO: Run ShowRuntime Behavior [ RunTime:0.009838s ]
+[ 2012-03-11T17:52:39+08:00 ] / | INFO: Tag[ view_filter ] --END-- [ RunTime:0.036224s ]
+[ 2012-03-11T17:52:39+08:00 ] / | INFO: Tag[ view_end ] --START--
+[ 2012-03-11T17:52:39+08:00 ] / | INFO: Run ShowPageTrace Behavior [ RunTime:0.018932s ]
+[ 2012-03-11T17:52:39+08:00 ] / | INFO: Tag[ view_end ] --END-- [ RunTime:0.019024s ]
+[ 2012-03-11T17:52:51+08:00 ] /index.php/Photo/add | ERR: (ThinkException) 模板不存在[./Tpl/default/Photo/add.html]
+[ 2012-03-11T17:53:01+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2012-03-11T17:53:01+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000462s ]
+[ 2012-03-11T17:53:01+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000542s ]
+[ 2012-03-11T17:53:01+08:00 ] / | INFO: Tag[ view_template ] --START--
+[ 2012-03-11T17:53:01+08:00 ] / | INFO: Run LocationTemplate Behavior [ RunTime:0.000419s ]
+[ 2012-03-11T17:53:01+08:00 ] / | INFO: Tag[ view_template ] --END-- [ RunTime:0.000497s ]
+[ 2012-03-11T17:53:01+08:00 ] / | INFO: Tag[ view_parse ] --START--
+[ 2012-03-11T17:53:01+08:00 ] / | INFO: Run ParseTemplate Behavior [ RunTime:0.009276s ]
+[ 2012-03-11T17:53:01+08:00 ] / | INFO: Tag[ view_parse ] --END-- [ RunTime:0.009348s ]
+[ 2012-03-11T17:53:01+08:00 ] / | INFO: Tag[ view_filter ] --START--
+[ 2012-03-11T17:53:01+08:00 ] / | INFO: Run ContentReplace Behavior [ RunTime:0.000386s ]
+[ 2012-03-11T17:53:01+08:00 ] / | INFO: Run TokenBuild Behavior [ RunTime:0.000294s ]
+[ 2012-03-11T17:53:01+08:00 ] / | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000204s ]
+[ 2012-03-11T17:53:01+08:00 ] / | INFO: Run ShowRuntime Behavior [ RunTime:0.000403s ]
+[ 2012-03-11T17:53:01+08:00 ] / | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001428s ]
+[ 2012-03-11T17:53:01+08:00 ] / | INFO: Tag[ view_end ] --START--
+[ 2012-03-11T17:53:01+08:00 ] / | INFO: Run ShowPageTrace Behavior [ RunTime:0.001546s ]
+[ 2012-03-11T17:53:01+08:00 ] / | INFO: Tag[ view_end ] --END-- [ RunTime:0.001631s ]
+[ 2012-03-11T17:53:28+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2012-03-11T17:53:28+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000761s ]
+[ 2012-03-11T17:53:28+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000834s ]
+[ 2012-03-11T17:53:28+08:00 ] / | INFO: Tag[ view_template ] --START--
+[ 2012-03-11T17:53:28+08:00 ] / | INFO: Run LocationTemplate Behavior [ RunTime:0.001266s ]
+[ 2012-03-11T17:53:28+08:00 ] / | INFO: Tag[ view_template ] --END-- [ RunTime:0.001352s ]
+[ 2012-03-11T17:53:28+08:00 ] / | INFO: Tag[ view_parse ] --START--
+[ 2012-03-11T17:53:28+08:00 ] / | INFO: Run ParseTemplate Behavior [ RunTime:0.012385s ]
+[ 2012-03-11T17:53:28+08:00 ] / | INFO: Tag[ view_parse ] --END-- [ RunTime:0.012462s ]
+[ 2012-03-11T17:53:28+08:00 ] / | INFO: Tag[ view_filter ] --START--
+[ 2012-03-11T17:53:28+08:00 ] / | INFO: Run ContentReplace Behavior [ RunTime:0.000689s ]
+[ 2012-03-11T17:53:28+08:00 ] / | INFO: Run TokenBuild Behavior [ RunTime:0.000623s ]
+[ 2012-03-11T17:53:28+08:00 ] / | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000508s ]
+[ 2012-03-11T17:53:28+08:00 ] / | INFO: Run ShowRuntime Behavior [ RunTime:0.000710s ]
+[ 2012-03-11T17:53:28+08:00 ] / | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002693s ]
+[ 2012-03-11T17:53:28+08:00 ] / | INFO: Tag[ view_end ] --START--
+[ 2012-03-11T17:53:28+08:00 ] / | INFO: Run ShowPageTrace Behavior [ RunTime:0.002190s ]
+[ 2012-03-11T17:53:28+08:00 ] / | INFO: Tag[ view_end ] --END-- [ RunTime:0.002265s ]
+[ 2012-03-11T17:53:39+08:00 ] /index.php?s=/Photo/add | ERR: (ThinkException) 模板不存在[./Tpl/default/Photo/add.html]
+[ 2012-03-11T17:53:57+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2012-03-11T17:53:57+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000757s ]
+[ 2012-03-11T17:53:57+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000830s ]
+[ 2012-03-11T17:53:57+08:00 ] / | INFO: Tag[ view_template ] --START--
+[ 2012-03-11T17:53:57+08:00 ] / | INFO: Run LocationTemplate Behavior [ RunTime:0.002488s ]
+[ 2012-03-11T17:53:57+08:00 ] / | INFO: Tag[ view_template ] --END-- [ RunTime:0.002567s ]
+[ 2012-03-11T17:53:57+08:00 ] / | INFO: Tag[ view_parse ] --START--
+[ 2012-03-11T17:53:57+08:00 ] / | INFO: Run ParseTemplate Behavior [ RunTime:0.011537s ]
+[ 2012-03-11T17:53:57+08:00 ] / | INFO: Tag[ view_parse ] --END-- [ RunTime:0.011618s ]
+[ 2012-03-11T17:53:57+08:00 ] / | INFO: Tag[ view_filter ] --START--
+[ 2012-03-11T17:53:57+08:00 ] / | INFO: Run ContentReplace Behavior [ RunTime:0.000749s ]
+[ 2012-03-11T17:53:57+08:00 ] / | INFO: Run TokenBuild Behavior [ RunTime:0.000608s ]
+[ 2012-03-11T17:53:57+08:00 ] / | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000584s ]
+[ 2012-03-11T17:53:57+08:00 ] / | INFO: Run ShowRuntime Behavior [ RunTime:0.000708s ]
+[ 2012-03-11T17:53:57+08:00 ] / | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002799s ]
+[ 2012-03-11T17:53:57+08:00 ] / | INFO: Tag[ view_end ] --START--
+[ 2012-03-11T17:53:57+08:00 ] / | INFO: Run ShowPageTrace Behavior [ RunTime:0.002673s ]
+[ 2012-03-11T17:53:57+08:00 ] / | INFO: Tag[ view_end ] --END-- [ RunTime:0.002752s ]
+[ 2012-03-11T18:02:04+08:00 ] / | INFO: Tag[ app_begin ] --START--
+[ 2012-03-11T18:02:04+08:00 ] / | INFO: Run ReadHtmlCache Behavior [ RunTime:0.015206s ]
+[ 2012-03-11T18:02:04+08:00 ] / | INFO: Tag[ app_begin ] --END-- [ RunTime:0.015300s ]
+[ 2012-03-11T18:02:04+08:00 ] / | INFO: Tag[ view_template ] --START--
+[ 2012-03-11T18:02:04+08:00 ] / | INFO: Run LocationTemplate Behavior [ RunTime:0.025283s ]
+[ 2012-03-11T18:02:04+08:00 ] / | INFO: Tag[ view_template ] --END-- [ RunTime:0.025369s ]
+[ 2012-03-11T18:02:04+08:00 ] / | INFO: Tag[ view_parse ] --START--
+[ 2012-03-11T18:02:04+08:00 ] / | INFO: Run ParseTemplate Behavior [ RunTime:0.047436s ]
+[ 2012-03-11T18:02:04+08:00 ] / | INFO: Tag[ view_parse ] --END-- [ RunTime:0.047512s ]
+[ 2012-03-11T18:02:04+08:00 ] / | INFO: Tag[ view_filter ] --START--
+[ 2012-03-11T18:02:04+08:00 ] / | INFO: Run ContentReplace Behavior [ RunTime:0.014439s ]
+[ 2012-03-11T18:02:04+08:00 ] / | INFO: Run TokenBuild Behavior [ RunTime:0.006715s ]
+[ 2012-03-11T18:02:04+08:00 ] / | INFO: Run WriteHtmlCache Behavior [ RunTime:0.004891s ]
+[ 2012-03-11T18:02:04+08:00 ] / | INFO: Run ShowRuntime Behavior [ RunTime:0.010221s ]
+[ 2012-03-11T18:02:04+08:00 ] / | INFO: Tag[ view_filter ] --END-- [ RunTime:0.036451s ]
+[ 2012-03-11T18:02:04+08:00 ] / | INFO: Tag[ view_end ] --START--
+[ 2012-03-11T18:02:04+08:00 ] / | INFO: Run ShowPageTrace Behavior [ RunTime:0.019684s ]
+[ 2012-03-11T18:02:04+08:00 ] / | INFO: Tag[ view_end ] --END-- [ RunTime:0.019819s ]
+[ 2012-03-11T18:02:11+08:00 ] /index.php/Photo/add | INFO: Tag[ route_check ] --START--
+[ 2012-03-11T18:02:11+08:00 ] /index.php/Photo/add | INFO: Run CheckRoute Behavior [ RunTime:0.029699s ]
+[ 2012-03-11T18:02:11+08:00 ] /index.php/Photo/add | INFO: Tag[ route_check ] --END-- [ RunTime:0.029784s ]
+[ 2012-03-11T18:02:11+08:00 ] /index.php/Photo/add | INFO: Tag[ app_begin ] --START--
+[ 2012-03-11T18:02:11+08:00 ] /index.php/Photo/add | INFO: Run ReadHtmlCache Behavior [ RunTime:0.001471s ]
+[ 2012-03-11T18:02:11+08:00 ] /index.php/Photo/add | INFO: Tag[ app_begin ] --END-- [ RunTime:0.001535s ]
+[ 2012-03-11T18:02:11+08:00 ] /index.php/Photo/add | INFO: Tag[ view_template ] --START--
+[ 2012-03-11T18:02:11+08:00 ] /index.php/Photo/add | INFO: Run LocationTemplate Behavior [ RunTime:0.001092s ]
+[ 2012-03-11T18:02:11+08:00 ] /index.php/Photo/add | INFO: Tag[ view_template ] --END-- [ RunTime:0.001166s ]
+[ 2012-03-11T18:02:11+08:00 ] /index.php/Photo/add | INFO: Tag[ view_parse ] --START--
+[ 2012-03-11T18:02:11+08:00 ] /index.php/Photo/add | NOTIC: [2] file_get_contents(./Tpl/default/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory ThinkTemplate.class.php 第 702 行.
+[ 2012-03-11T18:02:11+08:00 ] /index.php/Photo/add | NOTIC: [8] Undefined variable: category 95e2f48d68caa44aad7781281fec9135.php 第 147 行.
+[ 2012-03-11T18:02:11+08:00 ] /index.php/Photo/add | INFO: Run ParseTemplate Behavior [ RunTime:0.084513s ]
+[ 2012-03-11T18:02:11+08:00 ] /index.php/Photo/add | INFO: Tag[ view_parse ] --END-- [ RunTime:0.084586s ]
+[ 2012-03-11T18:02:11+08:00 ] /index.php/Photo/add | INFO: Tag[ view_filter ] --START--
+[ 2012-03-11T18:02:11+08:00 ] /index.php/Photo/add | INFO: Run ContentReplace Behavior [ RunTime:0.000724s ]
+[ 2012-03-11T18:02:11+08:00 ] /index.php/Photo/add | INFO: Run TokenBuild Behavior [ RunTime:0.000699s ]
+[ 2012-03-11T18:02:11+08:00 ] /index.php/Photo/add | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000538s ]
+[ 2012-03-11T18:02:11+08:00 ] /index.php/Photo/add | INFO: Run ShowRuntime Behavior [ RunTime:0.000682s ]
+[ 2012-03-11T18:02:11+08:00 ] /index.php/Photo/add | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002796s ]
+[ 2012-03-11T18:02:11+08:00 ] /index.php/Photo/add | INFO: Tag[ view_end ] --START--
+[ 2012-03-11T18:02:11+08:00 ] /index.php/Photo/add | INFO: Run ShowPageTrace Behavior [ RunTime:0.002025s ]
+[ 2012-03-11T18:02:11+08:00 ] /index.php/Photo/add | INFO: Tag[ view_end ] --END-- [ RunTime:0.002095s ]
+[ 2012-03-11T18:02:11+08:00 ] /index.php/photo/verify | INFO: Tag[ route_check ] --START--
+[ 2012-03-11T18:02:11+08:00 ] /index.php/photo/verify | INFO: Run CheckRoute Behavior [ RunTime:0.001324s ]
+[ 2012-03-11T18:02:11+08:00 ] /index.php/photo/verify | INFO: Tag[ route_check ] --END-- [ RunTime:0.001424s ]
+[ 2012-03-11T18:02:11+08:00 ] /index.php/photo/verify | INFO: Tag[ app_begin ] --START--
+[ 2012-03-11T18:02:11+08:00 ] /index.php/photo/verify | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000604s ]
+[ 2012-03-11T18:02:11+08:00 ] /index.php/photo/verify | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000667s ]

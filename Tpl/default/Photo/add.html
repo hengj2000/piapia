@@ -1,0 +1,155 @@
+<include file="Public:head" />
+<link type="text/css" rel="stylesheet" href="/Tpl/default/Public/css/smart_upload.css" />
+
+        
+<div id="main">
+	
+	<div id="content" style="width: 980px;margin:0 auto">
+	<div style="padding-top: 30px; clear: both;"></div>
+<div class="flashUpload flashUploadExp2 clearfix" style="text-align:center;">
+
+ <div class="uploadform" id="uploadfrm">
+<form name="s3_upload" method="post" id="upload" enctype="multipart/form-data" action="__APP__/Photo/Upload" target="iframeUpload">
+  <input type="hidden" name="ajax" value="1">
+      <iframe name="iframeUpload" src="" width="350" height="35" frameborder=0  scrolling="no" style="display:none;" ></iframe>
+                                            <input type="hidden" name="_uploadFileResult" value="result">
+                                            <input type="hidden" name="_uploadFormId" value="upload">
+                                            <input type="hidden" name="_uploadFileSize" value="-1">
+                                            <input type="hidden" name="_uploadResponse" value="uploadComplete">
+                                            <input type="hidden" name="_uploadFileVerify" value="{$verify}">
+                                            <input type="hidden" name="_uploadFileType" value="jpeg,jpg,gif,png,flv,rm,asf">
+                                            <input type="hidden" name="_uploadSavePath" value="/Public/Uploads/" >
+                                            <input type="hidden" name="_uploadImgThumb" value="1">
+                                            <input type="hidden" name="_uploadThumbMaxWidth" value="200">
+                                            <input type="hidden" name="_uploadThumbMaxHeight" value="200">
+                                            
+                                            
+    <input type="file" name="file"  id="slideshow_pptfile">&nbsp;
+  <span onclick="javascript:document.getElementById('upload').submit();" class="button">上传</span>
+    
+  </form>
+   
+  </div> 
+  <div id="imgresult"></div>
+  <br>  
+   <div id="result" class="result none"></div>
+   <br>
+  <div class="uploadform" id="aboutphoto" style="display:none">
+            <form method="post" id="form1" action="__APP__/Photo/save">
+            <input type="hidden" name="imgid" value="">
+               
+                <p><label for="tags" class="left">图片标签:</label>
+                  <input type="text" class="field"  name="tags"><br>(用空格隔开多个标签)</p>
+                 
+                <p><label for="message" class="left">描述一下:</label>
+                   <textarea name="contact_message" id="contact_message"  rows="3" tabindex="5"></textarea></p>
+               
+                <p> <label for="contact_message" class="left"></label>
+                    <input type="hidden" name="ajax" value="1">
+                     <img id="verifyImg" src="__URL__/verify" align="absmiddle">&nbsp;&nbsp;<input type="text" name="verify" class="text small"> 输入验证码 [ <a href="javascript:fleshVerify()">看不清？</a> ] 
+                                            </p>
+                  <p>
+                  <span onclick="javascript:save()" class="button">提交</span>
+            </form>
+       </div>
+          
+                    
+ 
+
+
+</div>
+</div>
+
+</div>
+   <script language="JavaScript">
+                <!--
+                function addRow(){
+                    curFileNum++;
+                    rowsnum++;
+                    var row=tbl.insertRow(-1);
+                    //var td = arow.insertCell();
+                    var cell = document.createElement("td");
+                    cell.innerHTML='<div class="impBtn  fLeft" ><input type="file" id="file'+curFileNum+'" name="file'+ curFileNum +'" class="file  huge"></div><div class="fLeft hMargin"><img src="../Public/images/del.gif"  style="cursor:hand" onfocus="javascript:getObject(this)" onclick="deleteRow();" width="20" height="20" border="0" alt="删除" align="absmiddle"></div> ';
+                    cell.align="center"
+                    row.appendChild(cell);
+                    //addFileForm.num.value=rowsnum;
+                }
+                function deleteRow(){
+                    if(tbl.rows.length>0){
+                        tbl.deleteRow(rindex); //删除当前行
+                        rowsnum--;
+                    }else{
+                        return;
+                    }
+                    rindex="";
+                }
+                function getObject(obj){
+                    rindex=obj.parentElement.parentElement.rowIndex;/*当前行对象*/
+                }
+
+                function uploading(msg){
+                    $('#result').style.display = 'block';
+                    $('#result').innerHTML = '<img src="/Tpl/default/Public/images/ajaxloading.gif" width="16" height="16" border="0" alt="" align="absmiddle"> 文件上传中～';
+                    return true;
+                }
+                function save(){
+                    var ss= '__URL__/insert/';
+                    
+                    if ($('file1').value){
+                        $('#form1').uploading();
+                        $('#upload').submit();
+                    }else{
+                        //document.getElementById('editor').value = KE.html('editor');
+                        ThinkAjax.sendForm('form1','__URL__/insert/',doComplete,'result');
+                    }
+                }
+ 
+                function uploadComplete(objid,objname){
+                     //  document.getElementById('editor').value = KE.html('editor');
+                  //  ThinkAjax.sendForm('form1','__URL__/insert/',doComplete,'result');
+                    //$('upload').reset();
+                    if (objid != "" && objname != ""){
+                        document.getElementById('uploadfrm').style.display = "none";
+                        $('#imgresult').append("<img src='/Public/Uploads/thumb_"+objname+"' border=0>");
+                         document.getElementById('aboutphoto').style.display = "";
+                         document.getElementById('imgid').value = objid;
+                   }
+                }
+                function doComplete(data,status){
+                    if (status==1){
+                        window.location.href='__URL__';
+                        $('form1').reset();
+                        $('upload').reset();
+                        fleshVerify();
+                    }
+                }
+                
+
+                function delpp(id){
+                   $.ajax({
+                		   type: "get",
+                		   url: '__URL__/delAttach/id/'+id,
+                		   data: "",
+		   		   success: function(msg){
+		   		       $('#imgresult').empty();
+		   		       doFreshpage();
+		   		   },
+                       error: function(msg){alert(msg);}
+                    });
+
+                }
+                  function doFreshpage(){
+                       //if (status==1){
+                           $('#imgresult').empty();
+                           $('#result').empty();
+                           document.getElementById('uploadfrm').style.display = "";
+                           //document.getElementById('aboutphoto').style.display = "none";
+                     //  }
+                  }
+                //-->
+            </script>
+ <script language="JavaScript">
+   
+        </script>
+
+ <include file="Public:foot" />
