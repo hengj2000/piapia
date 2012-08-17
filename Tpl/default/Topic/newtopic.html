@@ -1,0 +1,75 @@
+<include file="./Tpl/default/Public/head.html" />
+<style>
+.main {
+    background: none repeat scroll 0 0 #F0F0F0;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-top: -52px;
+    padding-bottom: 37px;
+    padding-top: 17px;
+}
+.size1of1 {
+    float: none;
+}
+.content.main h1 {
+    line-height: 120%;
+}
+.bottom15 {
+    margin-bottom: 15px !important;
+}
+.bottom30 {
+    margin-bottom: 30px !important;
+}
+.thin {
+    font-weight: 200;
+    text-shadow: none;
+}.main{width:480px}
+
+</style>
+ 
+<div id="main">
+	<div id="content" >
+<div style="padding-top: 60px; clear: both;"></div>                
+                <h1 class="bottom15" style="font-size:30px">新主题</h1>
+                <h3 class="h2 thin bottom30"></h3>
+                <form role="form" name="tryit" method="post" id="signupform" action="/Topic/savetopic"> 
+                  <div class="line bottom30"> 
+                    <label for="email">标题</label> 
+                    <div class="field-wrap two-column">
+                      <input type="text" value="" name="title" id="title" class="required med"> 
+                    </div>                             
+                  </div> 
+                  <div class="line bottom30"> 
+                    <label for="username">图片</label> 
+                     <div class="field-wrap two-column" style="position: relative;">
+                      <input type="file" value="" name="pic" id="pic" class="required med"> 
+                     </div>
+                  </div> 
+                   <div class="line bottom30"> 
+                    <label for="email">内容</label> 
+                    <div class="field-wrap two-column">
+                      <textarea name="contents" id="contents" class="required med" rows="5" cols="60"> </textarea>
+                    </div>                             
+                  </div>
+                 <div class="line"> 
+                    <p>&nbsp;</p>
+                    <div id="signin_msg"></div>
+                    <p>&nbsp;</p>
+                  </div> 
+                  <div class="line"> 
+                    <div class="unit size1of2"> 
+                      <div class="right15"> 
+                        <input type="button" value="保    存" name="button2" class="bigtbh" id="singup"> 
+                      </div>
+                    </div> 
+                  </div> 
+  
+                </form> 
+              </div> 
+     </div>  
+     <script src="/Tpl/default/Public/Js/comm.js" type="text/javascript"></script>
+                 
+   <include file="./Tpl/default/Public/foot.html" />
+ </body>
+</html>

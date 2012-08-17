@@ -5,7 +5,7 @@ body {-webkit-text-size-adjust: none; margin: 0px;font-family: "\5FAE\8F6F\96C5\
 #infobar{font-size:9pt;color:#ccc;text-align:center;margin:auto;padding-top:2px;width:850px}
 #share {z-index:20;position:absolute;top:8px;right:5px;width:120px}
 /*content*/
-#main{position:static;text-align:left;width:100%;margin:auto;}
+#main{position:static;text-align:left;width:100%;margin:0 auto;}
 #header-box {position: relative;width:930px;margin:auto;padding:5px; border:1px solid #777; background-color:#fff;border-radius:6px;-moz-border-radius: 6px;-webkit-border-radius: 6px;-moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);}
 #header-box:before, #header-box:after {position: absolute;width: 40%;height: 10px;content: ' ';left: 13px;bottom: 13px;background: transparent;-webkit-transform: skew(-4deg) rotate(-4deg);-moz-transform: skew(-4deg) rotate(-4deg);-ms-transform: skew(-4deg) rotate(-4deg);-o-transform: skew(-4deg) rotate(-4deg);transform: skew(-4deg) rotate(-4deg);-webkit-box-shadow: 0 10px 13px rgba(0, 0, 0, 0.5);-moz-box-shadow: 0 10px 13px rgba(0, 0, 0, 0.5);box-shadow: 0 10px 13px rgba(0, 0, 0, 0.5);z-index: -1;}
 #header-box:after {left: auto;right: 13px;-webkit-transform: skew(4deg) rotate(4deg);-moz-transform: skew(4deg) rotate(4deg);-ms-transform: skew(4deg) rotate(4deg);-o-transform: skew(4deg) rotate(4deg);transform: skew(4deg) rotate(4deg);}
@@ -14,9 +14,9 @@ body {-webkit-text-size-adjust: none; margin: 0px;font-family: "\5FAE\8F6F\96C5\
 #map {border:1px dashed #999;height:248px;}
 #adSpace {position:absolute;top:0px;right:0px}
 .adSpace {width:300px;height:250px;background-color:#eee;-moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);}
-#content {margin:auto;text-align:center;width:920px;}
+#popular,#content {width:980px;margin:0 auto;}#content {min-height:520px;}
 #loading {padding:30px;display:none;text-align:center}
-#more {margin:auto;padding:0px;padding-top:15px;padding-bottom:15px;width:850px;text-align:center;cursor:pointer;display:none; font-size:12pt;font-weight:bold;color:#222;text-shadow: 0px 1px #ccc, 0px 0px #000;}
+#more {margin:auto;padding:0px;padding-top:15px;padding-bottom:15px;width:850px;text-align:center;cursor:pointer;display:block; font-size:12pt;font-weight:bold;color:#222;text-shadow: 0px 1px #ccc, 0px 0px #000;}
 #featured {margin:auto;display:none;width:700px;padding:10px;background-color:#eea;border:1px dashed #888;border-top:0px}
 /*profile*/
 #profile_img {position:relative;float:left;width:82px;}
@@ -66,9 +66,9 @@ body {-webkit-text-size-adjust: none; margin: 0px;font-family: "\5FAE\8F6F\96C5\
 .linkButtonS {text-decoration:none;color:#fff;padding:4px; background-color:#c00;border-radius:3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;}
 .button { display: inline; font-size:10pt; padding: 7px; border: 1px solid #000; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; background-color: #444; text-shadow: 0px -1px #000, 0px 0px #000; color: #eee; font-weight: bold; cursor: pointer;}
 .button:hover {background-color: #222;}
-.text2 {text-align:center;padding:20px; font-size:12pt; font-weight:bold;color:#222;text-shadow: 0px 1px #f8f8f8, 0px 0px #000}
+.text2 {text-align:center;padding:20px 0; font-size:12pt; font-weight:bold;color:#222;text-shadow: 0px 1px #f8f8f8, 0px 0px #000}
 .text3 {text-align:right;font-size:13px;font-weight:bold;cursor:pointer;padding:2px}
-.link {cursor:pointer;text-decoration:none; font-size:9pt; color:#ccc}
+.link {cursor:pointer;text-decoration:none; font-size:10pt; color:#ccc}
 /*custom*/
 .search {font-size:20px;width:360px}
 .link2 {text-decoration:none;color:#000;}
@@ -314,4 +314,144 @@ input.text,input.file{
 .uploadform textarea {width:275px; padding:2px; border:solid 1px rgb(200,200,200);padding: 4px 1px;background-color: #fff;}
 .uploadform input.button {float:right; width:9.0em; margin-right:20px; padding:1px !important /*Non-IE6*/; padding:0 /*IE6*/; background:rgb(230,230,230); border:solid 1px rgb(150,150,150); text-align:center; font-family:"\5FAE\8F6F\96C5\9ED1",verdana,arial,sans-serif; color:rgb(150,150,150); font-size:100%;}
 .uploadform input.button:hover {cursor: pointer; border:solid 1px rgb(80,80,80); background:rgb(220,220,220); color:rgb(80,80,80);}
-a,span,label{font-size:13px;}
+a,span,label{font-size:14px;}
+#photos-map {
+    margin-top: 15px;
+}
+#tabs {
+    border-bottom: 1px solid #BBBBBB;
+    float: left;
+    list-style: none outside none;
+    margin: 0 0 5px;
+    padding: 0 0 0 5px;
+    position: relative;
+    width: 440px;
+}
+ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#tabs li {
+    background-image: url("/img/tab-l.ltr.gif");
+    background-position: left 0;
+    background-repeat: no-repeat;
+    float: left;
+    font-family: "Miscrosoft YaHei";
+    font-size: 100%;
+    padding-left: 7px;
+}
+
+li {
+    display: list-item;
+}
+#tab_checkbox_area {
+    float: left;
+    margin-bottom: 10px;
+    width: 440px;
+}#tab_checkbox_area label {
+    color: #8A8A8A;
+    font-size: 90%;
+    vertical-align: middle;
+}#preview div {
+    display: inline;
+    float: left;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    width: 112px;
+}
+#photo-comments {
+float: left;
+    padding: 15px 15px 15px 0;
+    width: 680px;
+    
+background-color: #F9F9F9;
+    border: 1px solid white;
+    box-shadow: 2px 2px 0 #E5E5E5;
+}
+.fLeft {float:left}
+.clear{clear:both}
+#sidebar{
+float:right;
+width:260px;padding: 20px 0;margin-left:20px;
+background-image: -moz-linear-gradient(left center , #F4F4F4, #FAFAFA);
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    box-shadow: -1px 0 0 #E9E9E9, 2px 0 0 #E3E3E3;
+    height: 100%;
+background-color: #F5F5F5;
+}
+#main-photo {
+    clear: both;
+    display: block;
+    text-align: center;
+    width: 630px;
+}
+#author {
+    font-size: 90%;
+    line-height: 140%;
+    margin: 5px 0;
+}
+form label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+form label, form input, form textarea {
+    clear: both;
+    float: left;
+}label {
+    cursor: default;
+}
+form input{border:solid 1px #ccc}
+form input.med[type="text"], form input.med[type="email"], form input.med[type="password"] {
+    font-family: "微软雅黑",Arial;
+    padding: 10px;width:430px;font-size:16px;
+
+}
+#signin_msg{color:red;}
+.bigtbh{
+    background-color: #E95C41;
+    background-image: -moz-linear-gradient(center top , #E95C41, #D93E2A);
+    border: 1px solid #5E5E5E;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 60px;
+    width: 210px; color:#fff; border: 1px solid #5E5E5E;    border-radius: 7px 7px 7px 7px;cursor:pointer
+}
+.middlebtn{
+    background-color: #E95C41;
+    background-image: -moz-linear-gradient(center top , #E95C41, #D93E2A);
+    border: 1px solid #5E5E5E;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 20px;
+    width: 110px; color:#fff; border: 1px solid #5E5E5E;    border-radius: 7px 7px 7px 7px;cursor:pointer
+}
+.smbtn{
+    background-color: #E95C41;
+    background-image: -moz-linear-gradient(center top , #E95C41, #D93E2A);
+    border: 1px solid #5E5E5E;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 4px 10px;
+    width: 80px; color:#fff; border: 1px solid #5E5E5E;    border-radius: 7px 7px 7px 7px;cursor:pointer
+}
+.login-field {
+    position: relative;
+}
+.above-below15 {
+    margin-bottom: 15px !important;
+    margin-top: 15px !important;
+}.line,hr{*zoom:1}.line:after{clear:both;display:block;visibility:hidden;overflow:hidden;height:0!important;line-height:0;font-size:xx-large;content:" x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x "}
+#footer{height:50px;width:100%}
+#footer .container {
+    font-size: 14px;
+    margin: 0 auto;
+    position: relative;
+    width: 980px;
+    text-align:center;
+    padding-top:15px;
+}

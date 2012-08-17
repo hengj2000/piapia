@@ -1,0 +1,109 @@
+<taglib name="html,tp" />
+<include file="./Tpl/default/Public/head.html" />   
+ <load href="__PUBLIC__/Js/Base.js" />
+        <load href="__PUBLIC__/Js/prototype.js" />
+        <load href="__PUBLIC__/Js/mootools.js" />
+        <load href="__PUBLIC__/Js/Ajax/ThinkAjax.js" />
+        <load href="__PUBLIC__/Js/UbbEditor.js" />
+        <load href="__PUBLIC__/Js/Form/CheckForm.js" />
+<tp:editor id="textContent" uploadurl="/Public/editor_up" width="600"></tp:editor>
+ 
+<div id="main">
+	<div id="content" >
+<div style="padding-top: 60px; clear: both;"></div>   
+<script language="JavaScript">
+               
+                function getObject(obj){
+                    rindex=obj.parentElement.parentElement.rowIndex;/*当前行对象*/
+                }
+
+                function uploading(msg){
+                    $('result').style.display = 'block';
+                    $('result').innerHTML = '<img src="../Public/images/ajaxloading.gif" width="16" height="16" border="0" alt="" align="absmiddle"> 文件上传中～';
+                    return true;
+                }
+                function save(){
+                    if ($('file1').value){
+                        $('#form1').uploading();
+                        $('upload').submit();
+                    }else{
+                        //document.getElementById('editor').value = KE.html('editor');
+                        ThinkAjax.sendForm('form1','/Photo/insert/',doComplete,'result');
+                    }
+                }
+                function selectCategory(){
+                    var result= PopModalWindow('__APP__/Category/treeSelect/',268,360);
+                    if(typeof(result) == "undefined") return;
+                    $('categoryName').value=result[0][0];
+                    $('categoryId').value=result[0][1];
+                }
+                function uploadComplete(){
+                    document.getElementById('editor').value = KE.html('editor');
+                    ThinkAjax.sendForm('form1','/Photo/insert/',doComplete,'result');
+                    $('upload').reset();
+                }
+                function doComplete(data,status){
+                    if (status==1){
+                        window.location.href='/';
+                        $('form1').reset();
+                        $('upload').reset();
+                        fleshVerify();
+                    }
+                }
+                //-->
+            </script>
+            
+                <table cellpadding=3 cellspacing=3 width="680px">
+                    <tr>
+                        <td colspan="2"><div class="block-title"><h2> 新主题</h2></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <form method=post id="form1" >
+                                <table cellpadding=3 cellspacing=3 width="100%" style="font-size:14px">
+                                    <tr>
+                                        <td colspan="2"><div id="result" class="result none"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tRight tTop" width="125px">标题：</td>
+                                        <td class="tLeft"><input type="text" class="huge text" check='Require' warning="标题不能为空" name="title" value="{$vo.title}"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tRight" >分类：</td>
+                                        <td class="tLeft" ><input type="text" class="medium readonly text"  readonly name="categoryName" value="{$vo.categoryId|getCategoryName}"><input type="hidden" class="medium bLeft" name="categoryId"  value="{$vo.categoryId}"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tRight tTop" >内容：</td>
+                                        <td class="tLeft"><textarea name="content" id="textContent" cols="45" rows="5">{$vo.content}</textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tRight">标签：</td>
+                                        <td class="tLeft"><input type="text" class="huge text"   name="tags" value="{$vo.tags}"> <span style="color:gray">用空格隔开多个标签</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td ></td>
+                                        <td class="center">
+                                          
+                                                <input type="hidden" name="ajax" value="1">
+                                                <input type="hidden" name="id" value="{$vo.id}">
+                                                <div class="fLeft hMargin"><img id="verifyImg" src="/Photo/verify" align="absmiddle"> <input type="text" name="verify" class="text small"> 输入验证码 [ <a href="javascript:fleshVerify()">看不清？</a> ] </div>
+                                                <div class="clear"></div>
+                                                
+                                                <div class="fLeft hMargin"><input type="button" id="submit" value="保 存" onclick="save()" class="middlebtn"></div>
+                                           <div class="fLeft hMargin"><input type="reset" class="middlebtn"  value="重 置" ></div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                           
+                        </td>
+                    </tr>
+                </table>
+                <iframe name="iframeUpload" src="" width="350" height="35" frameborder=0  scrolling="no" style="display:none"></iframe>
+            </div>
+        </div>
+        <include file="./Tpl/default/Public/foot.html" />
+     
+     </body>
+     </html>

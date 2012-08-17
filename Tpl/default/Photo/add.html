@@ -1,4 +1,4 @@
-<include file="Public:head" />
+<include file="./Tpl/default/Public/head.html" />
 <link type="text/css" rel="stylesheet" href="/Tpl/default/Public/css/smart_upload.css" />
 
         
@@ -32,24 +32,24 @@
   </div> 
   <div id="imgresult"></div>
   <br>  
-   <div id="result" class="result none"></div>
+   <div id="result" class="result" style="display:none"></div>
    <br>
   <div class="uploadform" id="aboutphoto" style="display:none">
             <form method="post" id="form1" action="__APP__/Photo/save">
-            <input type="hidden" name="imgid" value="">
+            <input type="hidden" name="imgid" id="imgid" value="">
                
                 <p><label for="tags" class="left">图片标签:</label>
                   <input type="text" class="field"  name="tags"><br>(用空格隔开多个标签)</p>
                  
                 <p><label for="message" class="left">描述一下:</label>
-                   <textarea name="contact_message" id="contact_message"  rows="3" tabindex="5"></textarea></p>
+                   <textarea name="content" rows="3" tabindex="5"></textarea></p>
                
                 <p> <label for="contact_message" class="left"></label>
                     <input type="hidden" name="ajax" value="1">
-                     <img id="verifyImg" src="__URL__/verify" align="absmiddle">&nbsp;&nbsp;<input type="text" name="verify" class="text small"> 输入验证码 [ <a href="javascript:fleshVerify()">看不清？</a> ] 
+                     <img id="verifyImg" src="/Photo/verify" align="absmiddle">&nbsp;&nbsp;<input type="text" name="verify" class="text small"> 输入验证码 [ <a href="javascript:fleshVerify()">看不清？</a> ] 
                                             </p>
                   <p>
-                  <span onclick="javascript:save()" class="button">提交</span>
+                  <span onclick="javascript:savepp()" class="button">提交</span>
             </form>
        </div>
           
@@ -92,16 +92,39 @@
                     $('#result').innerHTML = '<img src="/Tpl/default/Public/images/ajaxloading.gif" width="16" height="16" border="0" alt="" align="absmiddle"> 文件上传中～';
                     return true;
                 }
-                function save(){
-                    var ss= '__URL__/insert/';
-                    
-                    if ($('file1').value){
-                        $('#form1').uploading();
-                        $('#upload').submit();
-                    }else{
-                        //document.getElementById('editor').value = KE.html('editor');
-                        ThinkAjax.sendForm('form1','__URL__/insert/',doComplete,'result');
+                function savepp(){
+                    if ($('#imgid').val() == ""){
+                         $('#result').style.display = 'block';
+                         $('#result').innerHTML = '<img src="/Tpl/default/Public/images/tips.gif"  border="0" alt="" align="absmiddle"> 至少需要一张图片哦！～';
                     }
+                   // if (CheckForm($('#form1'),'#resut'))//表单数据验证
+                    
+                    var _ss= '/Photo/insert/';
+
+                    var _data =  $('#form1').serialize();
+                     $.ajax({
+                		   type: "POST",
+                		   url: _ss,
+                		   data: _data,
+		   		   success: function(msg){
+		   		           var obj = jQuery.parseJSON(msg);
+		   		            if (obj.status=="1"){
+		   		                 top.location="/";
+		   		            }else{
+		   		                 $('#result').style.display = 'block';
+                                 $('#result').innerHTML = obj.info;
+		   		            }
+		   		   },
+                       error: function(msg){alert(msg);}
+                    });
+
+//                    if ($('file1').value){
+//                        $('#form1').uploading();
+//                        $('#upload').submit();
+//                    }else{alert(1);
+//                        //document.getElementById('editor').value = KE.html('editor');
+//                        ThinkAjax.sendForm('form1','__URL__/insert/',doComplete,'result');
+//                    }
                 }
  
                 function uploadComplete(objid,objname){
@@ -128,11 +151,14 @@
                 function delpp(id){
                    $.ajax({
                 		   type: "get",
-                		   url: '__URL__/delAttach/id/'+id,
+                		   url: '/delAttach/id/'+id,
                 		   data: "",
 		   		   success: function(msg){
-		   		       $('#imgresult').empty();
-		   		       doFreshpage();
+		   		             var obj = jQuery.parseJSON(msg);
+		   		            if (obj.status=="1"){
+        		   		       $('#imgresult').empty();
+        		   		       doFreshpage();
+		   		        }
 		   		   },
                        error: function(msg){alert(msg);}
                     });

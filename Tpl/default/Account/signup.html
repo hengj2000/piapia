@@ -1,0 +1,82 @@
+<include file="./Tpl/default/Public/head.html" />
+<style>
+.main {
+    background: none repeat scroll 0 0 #F0F0F0;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-top: -52px;
+    padding-bottom: 37px;
+    padding-top: 17px;
+}
+.size1of1 {
+    float: none;
+}
+.content.main h1 {
+    line-height: 120%;
+}
+.bottom15 {
+    margin-bottom: 15px !important;
+}
+.bottom30 {
+    margin-bottom: 30px !important;
+}
+.thin {
+    font-weight: 200;
+    text-shadow: none;
+}.main{width:480px}
+
+</style>
+ 
+<div id="main">
+	<div id="content" >
+<div style="padding-top: 60px; clear: both;"></div>                
+                <h1 class="bottom15" style="font-size:30px">用户注册</h1>
+                <h3 class="h2 thin bottom30"></h3>
+                <form role="form" name="tryit" method="post" id="signupform" action="/Account/create"> 
+                  <div class="line bottom30"> 
+                    <label for="email">邮箱</label> 
+                    <div class="field-wrap two-column">
+                      <input type="email" value="" name="email" id="email" class="required med "> 
+                  </div>                             
+                  </div> 
+                  <div class="line bottom30"> 
+                    <label for="username">用户名</label> 
+                    <div class="field-wrap two-column" style="position: relative;">
+                      <input type="text" value="" name="username" id="username" class="required med "> 
+                                                             </div>
+                  </div> 
+                  <div class="line bottom30"> 
+                    <label for="password">密码</label> 
+                    <div class="field-wrap two-column">
+                      <input type="password" autocomplete="off" name="password" id="password" class="required med" value="">
+                      <div class="field-help context" style="display: none;">
+                       密码为字母或者数字. 
+                      </div>
+                                 <div class="field-help success" style="display: none;"></div><div class="field-help error" style="display: none;"></div></div>
+                  </div> 
+                 <div class="line"> 
+                    <p>&nbsp;</p>
+                    <div id="signin_msg"></div>
+                    <p>&nbsp;</p>
+                  </div> 
+                  <div class="line"> 
+                    <div class="unit size1of2"> 
+                      <div class="right15"> 
+                        <input type="button" value="注    册" name="button2" class="bigtbh" id="singup"> 
+                      </div> 
+                    </div> 
+                  </div> 
+                  <div class="line bottom52"> 
+                    
+                     <br/>已有帐户？ <a href="/Account/signin">登录</a>
+                    
+                  </div> 
+                </form> 
+              </div> 
+     </div>  
+     <script src="/Tpl/default/Public/Js/signup.js" type="text/javascript"></script>
+                 
+   <include file="./Tpl/default/Public/foot.html" />
+ </body>
+</html>
