@@ -1,4 +1,4 @@
-<?php
+?php
 return array(
   'APP_DEBUG' => false, //开启调试模式
 	'APP_FILE_CASE' => true,   // 是否检查文件的大小写 对Windows平台有效
@@ -26,29 +26,7 @@ return array(
 
     'SHOW_PAGE_TRACE'=>false,
     
-    'URL_MODEL' => '1',
-
-   "qq" => array(
-   "appid" => "100622428",
-   "appkey" => "c4592192467530c40c5a815efd28bd2e",
-   "appname" => "app100622428",
-  ),
-  
-  "sina" => array(
-  "appid" => "1591381109",
-   "appkey" => "0d4baaa5d6593c97c0554c5e61605fe9",
-   "appname" => "weibo login",
-  ),
-  "renren" => array(
-   "appid" => "c93f71ace25a491bb76adc2673224d25",
-   "appkey" => "0444afd930db4da988a58b5dbc042992",
-   "appname" => "app100622428",
-  ),
-  "qqweibo" => array(
-  "appid" => "100622428",
-   "appkey" => "c4592192467530c40c5a815efd28bd2e",
-   "appname" => "app100622428",
-  ),
+    'URL_MODEL' => '1'
 );
 
 ?> 
